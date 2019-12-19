@@ -1,0 +1,52 @@
+{
+  "name": "landing-page",
+  "version": "0.0.0",
+  "description": "Kleros Landing Page",
+  "keywords": [
+    "blockchain",
+    "ethereum",
+    "dapp",
+    "kleros"
+  ],
+  "repository": "https://github.com/kleros/landing-page",
+  "author": "Kleros",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "build:analyze": "source-map-explorer build/static/js/main.*",
+    "build:theme": "lessc --js ./src/styles/theme.less ./src/styles/theme.css"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "less": "^3.8.1",
+    "source-map-explorer": "^1.6.0",
+    "standard-version": "^4.4.0"
+  },
+  "dependencies": {
+    "add": "^2.0.6",
+    "antd": "^3.10.8",
+    "prop-types": "^15.6.2",
+    "react": "16.12.0",
+    "react-blockies": "^1.4.0",
+    "react-dom": "^16.12.0",
+    "react-helmet": "^5.2.0",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "^3.3.0",
+    "shallowequal": "^1.1.0",
+    "styled-components": "^4.1.1",
+    "styled-media-query": "^2.1.2",
+    "yarn": "^1.13.0"
+  }
+}
