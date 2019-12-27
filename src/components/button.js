@@ -15,6 +15,10 @@ const StyledButton = styled(Button)`
   &:hover {
     color: #fff;
   }
+
+  @media (max-width: 370px) {
+    width: 180px;
+  }
 `
 
 const colors = {

@@ -16,6 +16,10 @@ const Box = styled.div`
   img {
     position: relative;
   }
+
+  @media (max-width: 510px) {
+    height: 580px;
+  }
 `
 const StyledTitle = styled.div`
   color: #FFFFFF;

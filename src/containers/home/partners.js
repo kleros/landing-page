@@ -19,6 +19,11 @@ const IconContainer = styled.div`
 const PartnerIcon = styled.img`
   height: 100%;
   margin: 30px 15px;
+
+  @media (max-width: 510px) {
+    margin: 30px 5px;
+    width: 60%;
+  }
 `
 const StyledDivider = styled.div`
   border: 1px solid #9013FE;
