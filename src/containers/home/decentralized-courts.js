@@ -32,6 +32,8 @@ const StyledButtonCol = styled(Col)`
 export default ({language}) => {
   const heading = text[language].home.decentralizedCourts.heading
   const subheading = text[language].home.decentralizedCourts.subheading
+  const courtButton = text[language].buttons.tryKlerosCourt
+  const learnMoreButton = text[language].buttons.learnMore
 
   return (
     <StyledDecentralizedCourts>
@@ -40,11 +42,11 @@ export default ({language}) => {
       <Row style={{margin: '60px 0px'}}>
         <Col lg={6} md={4}/>
         <StyledButtonCol lg={4} md={4}>
-          <Button text={'Try Kleros Court'} action={()=>{window.location = 'https://court.kleros.io'}} color={'blue'} />
+          <Button text={courtButton} action={()=>{window.location = 'https://court.kleros.io'}} color={'blue'} />
         </StyledButtonCol>
         <Col lg={3} md={4} />
         <StyledButtonCol lg={4} md={4}>
-          <Button text={'Learn More'} action={()=>{window.location = 'https://blog.kleros.io/kleros-court-revitalised/'}} color={'purple'} />
+          <Button text={learnMoreButton} action={()=>{window.location = 'https://blog.kleros.io/kleros-court-revitalised/'}} color={'purple'} />
         </StyledButtonCol>
       </Row>
       <StyledImg src={CourtImg} />

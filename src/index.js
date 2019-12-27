@@ -1,9 +1,9 @@
 import './components/theme.css'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
-import { Col, Layout, Row } from 'antd'
+import { Col, Layout, Row, Dropdown } from 'antd'
 import { Helmet } from 'react-helmet'
 import Home from './containers/home/index'
-import React from 'react'
+import React, { useState } from 'react'
 import { ReactComponent as Logo } from './assets/images/logo.svg'
 import ReactDOM from 'react-dom'
 import styled from 'styled-components'
@@ -48,10 +48,19 @@ const StyledColRight = styled(Col)`
   `}
 `
 
+const getDefaultLanguage = () => {
+  let language = ((window.navigator.userLanguage || window.navigator.language) || 'en').split('-')[0]
+  if (!text[language]) language = 'en'
+  return language
+}
+
+const LanguageSelector = ({ setLanguage, currentLanguage }) => {
+
+}
+
 const App = () => {
-  let language = (window.navigator.userLanguage || window.navigator.language) || 'en-US'
+  const [ language, setLanguage ] = useState(getDefaultLanguage())
   // If we don't have translation for language use English
-  if (!text[language]) language = 'en-US'
 
   return (
     <>
