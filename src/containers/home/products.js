@@ -25,6 +25,7 @@ const StyledHeading = styled.div`
   line-height: 65px;
   padding-top: 100px;
   text-align: center;
+  margin: 0px 10px;
 `
 const ProductsContent = styled.div`
   padding: 70px 10.575vw 20px 10.575vw;

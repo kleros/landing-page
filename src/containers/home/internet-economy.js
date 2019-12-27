@@ -40,6 +40,10 @@ const StyledHeader = styled.div`
   position: absolute;
   z-index: 2
   top: 100px;
+
+  @media (max-width: 510px) {
+    font-size: 34px;
+  }
 `
 const StyledSubtext = styled.div`
   color: #D8B6FF;
@@ -50,6 +54,10 @@ const StyledSubtext = styled.div`
   position: absolute;
   z-index: 2
   top: 200px;
+
+  @media (max-width: 510px) {
+    font-size: 20px;
+  }
 `
 
 export default ({language}) => {

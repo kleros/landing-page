@@ -19,6 +19,10 @@ const Box = styled.div`
     position: relative;
 
     height: 130px;
+
+    @media (max-width: 510px) {
+      height: 80px;
+    }
   }
 `
 const StyledTitle = styled.div`
