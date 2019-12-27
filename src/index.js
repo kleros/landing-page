@@ -15,8 +15,9 @@ const StyledLayoutContent = styled(Layout.Content)`
 `
 const StyledLayout = styled(Layout)`
   min-height: 100vh;
+  max-width: 100%;
+  overflow-x: hidden;
   background: #1E075F;
-  margin: -8px;
   font-family: Roboto;
   font-style: normal;
 `
