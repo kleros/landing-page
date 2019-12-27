@@ -71,7 +71,7 @@ export default {
         'heading': 'Get in touch',
         'subtext': (
           <>
-            Looking to find out more? We're open to all proposals, suggestions and requests. Message us via <a href='https://kleros.io'>Telegram</a> or contact@kleros.io.
+            Looking to find out more? We're open to all proposals, suggestions and requests. Message us via <a href='https://t.me/kleros'>Telegram</a> or contact@kleros.io.
           </>
         )
       }
