@@ -21,6 +21,10 @@ const colors = {
   blue: {
     'background': 'linear-gradient(90deg, #009AFF 0%, #7BCBFF 100%)',
     'boxShadow': '0px 12px 90px #009AFF'
+  },
+  purple: {
+    'background': 'linear-gradient(90deg, #9013FE 0%, #BD73FF 100%)',
+    'boxShadow': '0px 12px 90px #9013FE'
   }
 }
 

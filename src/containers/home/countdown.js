@@ -8,8 +8,6 @@ import text from '../../text'
 
 const StyledTopSection = styled.div`
   background: linear-gradient(158.61deg, #4D00B4 15.9%, #1E075F 59.16%);
-  margin-left: -110px;
-  margin-right: -110px;
   color: white;
   text-align: center;
 `
@@ -44,6 +42,10 @@ const BoxBreak = styled.div`
   margin: 2%;
   position: absolute;
   top: -10px;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `
 const StyledSubtext = styled.div`
   color: #D8B6FF;
@@ -77,7 +79,7 @@ function useInterval(callback, delay) {
 }
 
 const getTimeLeft = () => {
-  const timeLeft = parseInt((endTime / 1000) - (new Date().getTime() / 1000))
+  let timeLeft = parseInt((endTime / 1000) - (new Date().getTime() / 1000))
   if (timeLeft < 0) timeLeft = 0
 
   const days = Math.floor(timeLeft/24/60/60)
@@ -112,6 +114,7 @@ export default ({language}) => {
   const seconds = text[language].home.countdown.seconds
   // Text
   const subtext = text[language].home.countdown.subtext
+  const buttonText = text[language].buttons.learnMore
 
   return (
     <StyledTopSection>
@@ -121,25 +124,26 @@ export default ({language}) => {
         <KlerosTextSmall>{subHeading}</KlerosTextSmall>
         <StyledHeadingText>{heading}</StyledHeadingText>
         <Row style={{'marginTop': '28px'}}>
-          <Col lg={4} offset={4}>
+          <Col lg={4} md={4}/>
+          <Col lg={4} md={4}>
             <div style={{width: '80%', display: 'inline-block'}}>
               <CountdownBox number={timeLeft.days} title={days.toUpperCase()} />
             </div>
             <BoxBreak>:</BoxBreak>
           </Col>
-          <Col lg={4}>
+          <Col lg={4} md={4}>
             <div style={{width: '80%', display: 'inline-block'}}>
               <CountdownBox number={timeLeft.hours} title={hours.toUpperCase()} />
             </div>
             <BoxBreak>:</BoxBreak>
           </Col>
-          <Col lg={4}>
+          <Col lg={4} md={4}>
             <div style={{width: '80%', display: 'inline-block'}}>
               <CountdownBox number={timeLeft.minutes} title={minutes.toUpperCase()} />
             </div>
             <BoxBreak>:</BoxBreak>
           </Col>
-          <Col lg={4}>
+          <Col lg={4} md={4}>
             <div style={{width: '80%', display: 'inline-block'}}>
               <CountdownBox number={timeLeft.seconds} title={seconds.toUpperCase()} />
             </div>
@@ -151,7 +155,7 @@ export default ({language}) => {
           </StyledSubtext>
         </Row>
         <Row style={{marginTop: '40px'}}>
-          <Button text={'Learn More'} action={() => {window.location = 'https://kleros.io'}} color={'blue'} />
+          <Button text={buttonText} action={() => {window.location = 'https://blog.kleros.io/kleros-token-sale-announcement-january-11-2020/'}} color={'blue'} />
         </Row>
       </StyledContent>
     </StyledTopSection>

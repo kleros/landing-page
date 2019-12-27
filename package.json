@@ -37,6 +37,7 @@
   "dependencies": {
     "add": "^2.0.6",
     "antd": "^3.10.8",
+    "dataloader": "^2.0.0",
     "prop-types": "^15.6.2",
     "react": "16.12.0",
     "react-blockies": "^1.4.0",

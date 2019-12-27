@@ -1,6 +1,6 @@
 import './components/theme.css'
-import { BrowserRouter, NavLink, Route, Switch } from 'react-router-dom'
-import { Col, Layout, Menu, Row } from 'antd'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import { Col, Layout, Row } from 'antd'
 import { Helmet } from 'react-helmet'
 import Home from './containers/home/index'
 import React from 'react'
@@ -12,7 +12,6 @@ import text from './text'
 
 const StyledLayoutContent = styled(Layout.Content)`
   background-color: transparent;
-  padding: 0px 7.575vw 100px 7.575vw;
 `
 const StyledLayout = styled(Layout)`
   min-height: 100vh;
@@ -29,15 +28,9 @@ const StyledLogoCol = styled(Col)`
   display: flex;
   height: 60px;
   justify-content: space-evenly;
-`
-const StyledLeftCol = styled(Col)`
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  ${media.lessThan("768px")`
-    /* screen width is less than 768px (medium) */
-    display: none;
-  `}
+  svg {
+    margin-top: 5px;
+  }
 `
 const StyledColRight = styled(Col)`
   align-items: right;
