@@ -21,7 +21,7 @@ const Box = styled.div`
     height: 130px;
 
     @media (max-width: 510px) {
-      height: 80px;
+      height: 60px;
     }
   }
 `

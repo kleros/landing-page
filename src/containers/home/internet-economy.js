@@ -42,7 +42,7 @@ const StyledHeader = styled.div`
   top: 100px;
 
   @media (max-width: 510px) {
-    font-size: 34px;
+    font-size: 33px;
   }
 `
 const StyledSubtext = styled.div`

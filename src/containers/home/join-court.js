@@ -5,6 +5,9 @@ import DrawnCases from '../../assets/images/drawn-cases.png'
 import Courts from '../../assets/images/courts.png'
 
 const StyledJoinCourt = styled.div`
+  @media (max-width: 510px) {
+    margin: 0px 10px;
+  }
 `
 const StyledHeading = styled.div`
   font-weight: 600;
