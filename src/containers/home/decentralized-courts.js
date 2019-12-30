@@ -46,7 +46,7 @@ export default ({language}) => {
         </StyledButtonCol>
         <Col lg={3} md={4} />
         <StyledButtonCol lg={4} md={4}>
-          <Button text={learnMoreButton} action={()=>{window.location = 'https://blog.kleros.io/kleros-court-revitalised/'}} color={'purple'} />
+          <Button text={learnMoreButton} action={()=>{window.location = 'https://kleros.io/en/court-tour'}} color={'purple'} />
         </StyledButtonCol>
       </Row>
       <StyledImg src={CourtImg} />

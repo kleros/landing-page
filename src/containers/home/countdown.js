@@ -54,6 +54,14 @@ const StyledSubtext = styled.div`
   line-height: 33px;
   text-align: center;
 `
+const StyledCountdownContainer = styled.div`
+  width: 80%;
+  display: inline-block;
+
+  @media (max-width: 768px) {
+    margin-bottom: 10px;
+  }
+`
 
 // Start of Sale
 const endTime = (new Date(Date.UTC(2020, 0, 11, 16, 0, 0))).getTime()
@@ -126,27 +134,27 @@ export default ({language}) => {
         <Row style={{'marginTop': '28px'}}>
           <Col lg={4} md={4}/>
           <Col lg={4} md={4}>
-            <div style={{width: '80%', display: 'inline-block'}}>
+            <StyledCountdownContainer>
               <CountdownBox number={timeLeft.days} title={days.toUpperCase()} />
-            </div>
+            </StyledCountdownContainer>
             <BoxBreak>:</BoxBreak>
           </Col>
           <Col lg={4} md={4}>
-            <div style={{width: '80%', display: 'inline-block'}}>
+            <StyledCountdownContainer>
               <CountdownBox number={timeLeft.hours} title={hours.toUpperCase()} />
-            </div>
+            </StyledCountdownContainer>
             <BoxBreak>:</BoxBreak>
           </Col>
           <Col lg={4} md={4}>
-            <div style={{width: '80%', display: 'inline-block'}}>
+            <StyledCountdownContainer>
               <CountdownBox number={timeLeft.minutes} title={minutes.toUpperCase()} />
-            </div>
+            </StyledCountdownContainer>
             <BoxBreak>:</BoxBreak>
           </Col>
           <Col lg={4} md={4}>
-            <div style={{width: '80%', display: 'inline-block'}}>
+            <StyledCountdownContainer>
               <CountdownBox number={timeLeft.seconds} title={seconds.toUpperCase()} />
-            </div>
+            </StyledCountdownContainer>
           </Col>
         </Row>
         <Row style={{marginTop: '25px'}}>

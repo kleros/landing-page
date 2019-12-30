@@ -12,6 +12,7 @@ import Linguo from '../../assets/images/linguo.png'
 import T2CR from '../../assets/images/t2cr.png'
 import RealitioImg from '../../assets/images/realitio.png'
 import PlusImg from '../../assets/images/plus.png'
+import CryptoUnlocked from '../../assets/images/crypto-unlocked.png'
 
 const StyledProducts = styled.div`
   color: #6700B4;
@@ -76,7 +77,13 @@ const products = [
     'image': GTCR
   },
   {
+    'title': 'CryptoUnlocked',
+    'link': 'https://cryptounlocked.wetrust.io/',
+    'image': CryptoUnlocked
+  },
+  {
     'title': 'Your DApp',
+    'link': 'https://kleros.io/en/partner',
     'image': PlusImg
   },
 ]

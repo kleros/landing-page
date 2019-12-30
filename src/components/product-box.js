@@ -37,11 +37,20 @@ const StyledTitle = styled.div`
 export default ({ image, title, link }) => {
   return (
     <BoxContainer>
-      <a href={link}>
-        <Box>
-          <img src={image} alt={'N/A'}/>
-        </Box>
-      </a>
+      {
+        link ? (
+          <a href={link}>
+            <Box>
+              <img src={image} alt={'N/A'}/>
+            </Box>
+          </a>
+        ) : (
+          <Box>
+            <img src={image} alt={'N/A'}/>
+          </Box>
+        )
+      }
+
       <StyledTitle>{title}</StyledTitle>
     </BoxContainer>
   )
