@@ -109,14 +109,15 @@ export default {
         seconds: "saniye",
         subtext: (
           <>
-            Satılacak jetonlar: 150,000,000 PNK or 15% <br />
-            11 Ocak 2020 Saat 16:00 UTC'de başlıyor!
+            150 milyon PNK (tümünün %15'i) satışı için geri sayım başladı!
+            <br />
+            11 Ocak 2020, saat 16:00 UTC'de başlıyor!
           </>
         )
       },
       decentralizedCourts: {
         subheading:
-          "Blokzinciri ihtilaf çözümleme katmanı. Herkes için hızlı, şeffaf ve ucuz adalet.",
+          "Blokzincirinin ihtilaf çözümleme katmanı. Herkes için hızlı, şeffaf ve ucuz adalet.",
         heading: "Merkezsiz Mahkemeler"
       },
       secretSauce: {
@@ -127,7 +128,7 @@ export default {
         pt2Subtext: (
           <>
             Kleros, gelişmiş kripto-ekonomi ve küresel juri topluluğunu bir
-            araya getirerek, anlaşmazlıklara hızlı, şeffaf ve ucuz bir şekilde
+            araya getirerek, ihtilaflara hızlı, şeffaf ve ucuz bir şekilde
             hakemlik edilmesine imkan sağlıyor.
           </>
         ),
@@ -136,8 +137,7 @@ export default {
           <>
             Pinakion jetonu sistemi saldırılardan korumakta ve jurileri
             oybirliğine varmaları için teşvik etmektedir. Daha detaylı bilgi
-            için
-            <a href="https://kleros.io/whitepaper.pdf">buraya</a> tıklayın.
+            için <a href="https://kleros.io/whitepaper.pdf">buraya</a> tıklayın.
           </>
         )
       },
@@ -154,7 +154,7 @@ export default {
         heading: "Adalet Devrimine Siz De Katılın!",
         subtext: (
           <>
-            Kleros'u Kleros yapan şey işbirliğidir. Platformunuzu güvenli ve
+            Kleros'u, Kleros yapan şey, işbirliğidir. Platformunuzu, güvenli ve
             ücretsiz olarak Kleros ile entegre etmekten memnun oluruz.
             <br />
             Eğer projenizde bir ihtilaf çözümlemeye ihtiyaç duyuyorsanız lütfen
@@ -174,7 +174,7 @@ export default {
         heading: "En Son"
       },
       joinCourt: {
-        heading: "Bir Mahkemeye Katılın",
+        heading: "Bir Mahkemeye Juri Olarak Katılın",
         subtext:
           "Bir mahkemeye katılın ve ETH ve PNK kazanırken ihtilaf çözümlemeye yardım edin."
       },
@@ -182,15 +182,16 @@ export default {
         heading: "İrtibata geçin",
         subtext: (
           <>
-            Önerilere ve taleplere açığız. Data fazlası için lütfen{" "}
-            <a href="https://t.me/kleros">Telegram</a> üzerinden bize yazın ya
-            da contact@kleros.io adresine email gönderin.
+            Önerilerilerinizi ve taleplerinizi duymaktan mutluluk duyarız. Data
+            fazlası için lütfen <a href="https://t.me/kleros">Telegram</a>{" "}
+            üzerinden bize yazın ya da contact@kleros.io adresine email
+            gönderin.
           </>
         )
       }
     },
     buttons: {
-      learnMore: "Devamı İçin",
+      learnMore: "Devamı İçin Tıklayın",
       joinAsJuror: "Juri Olun",
       becomeAPartner: "Çözüm Ortağı Olun",
       tryKlerosCourt: "Kleros Mahkemesini Deneyin"
