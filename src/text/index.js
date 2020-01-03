@@ -471,6 +471,91 @@ export default {
       'joinAsJuror': 'Seja um Jurado',
       'becomeAPartner': 'Seja um Parceiro',
       'tryKlerosCourt': 'Experimente Kleros Court'
+    },
+  },
+  'zh': {
+    'home': {
+      'countdown': {
+        'subheading': 'Kleros',
+        'heading': '代币销售',
+        'days': '天',
+        'hours': '小时',
+        'minutes': '分钟',
+        'seconds': '秒',
+        'subtext': (
+        <>
+        代币出售: 150,000,000 PNK<br />
+        从2020年1月11日北京时间晚上12点钟开始
+        </>
+        )
+      },
+      'decentralizedCourts': {
+        'subheading': '区块链争议解决方案为大家提供快速、开放和有利的正义。',
+        'heading': '去中心化司法平台',
+      },
+      'secretSauce': {
+        'pt1Heading': '点对点正义',
+        'pt1Subtext': '一个使用众包和区块链将争议解决流程交到社区手中的对等平台。',
+        'pt2Heading': "成功秘诀",
+        'pt2Subtext': (
+        <>
+        Kleros使用先进的加密货币经济学和全球陪审员社区，以快速、有利的放方式裁定争议。 
+        <a href="https://kleros.io/whitepaper.pdf">阅读白皮书了解更多内容</a>。
+        
+        区块链争议解决方案为大家提供快速、开放和有利的正义"
+        </>
+        ),
+        'pt3Heading': '为什么Kleros需要PNK？',
+        'pt3Subtext': (
+        <>
+        PNK（Pinakion）令牌可保护系统免受攻击，同时还为陪审员提供了经济上的动力来协调解决案件。 <a href="https://kleros.io/whitepaper.pdf">在这里了解更多</a>。
+        </>
+        )
+      },
+      'internetEconomy': {
+        'heading': '互联网经济',
+        'subtext': '随着我们的生活转向全球在线平台，传统法院系统无法解决的领域中出现了争议。'
+      },
+      'products': {
+        'heading': '产品与集成',
+        'disclaimer': '* 开发中的产品'
+      },
+      justiceRevolution: {
+        'heading': '加入正义革命',
+        'subtext': (
+        <>
+        协作造就了Kleros。 我们可以免费安全地与您的平台集成。  <br/>
+        如果这听起来像您可以在区块链项目中使用的东西，请问。
+        </>
+        ),
+        'joinJurorHeading': '加入为陪审员',
+        'joinJurorSubtext': '成为陪审员，又赚钱又为世界带来正义。',
+        'joinJurorButtonText': '加入为陪审员',
+        'joinPartnerHeading': '成为合伙人',
+        'joinPartnerSubtext': "将Kleros强大的争议解决技术免费集成到您的平台中。 ",
+        'joinPartnerButtonText': '成为合伙人',
+      },
+      latest: {
+        'heading': '最新'
+      },
+      joinCourt: {
+        'heading': '参加法院',
+        'subtext': '参加法院，帮助解决争议并赢得ETH和PNK的激励。'
+      },
+      contact: {
+        'heading': '联系我们',
+        'subtext': (
+        <>
+        想要了解更多？ 我们欢迎所有提案，建议和要求。加入<a href='https://t.me/kleros'>Telegram</a> 或微信群。
+        </>
+        )
+      }
+    },
+    buttons': {
+      'learnMore': '了解更多',
+      'joinAsJuror': '加入为陪审员',
+      'becomeAPartner': '成为合伙人',
+      'tryKlerosCourt': '参加司法平台'
     }
   },
 };
